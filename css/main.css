@@ -50,13 +50,13 @@
 	box-sizing: border-box;
 }
 
-body, html {
+/*body, html {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
 }
 
 /*---------------------------------------------*/
-a {
+/*a {
 	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
@@ -66,7 +66,7 @@ a {
 	-webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
-}
+}*/
 
 a:focus {
 	outline: none !important;
