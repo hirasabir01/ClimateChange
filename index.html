@@ -208,6 +208,21 @@
         <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
       </ul>
     </div>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "09dca55d-f4b5-4c5d-9981-fc602e918a18", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "6ced5adf-63ec-4690-a0b6-b97cfbf366a8", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    
     
     
     <!-- ################################################################################################ -->
@@ -232,5 +247,12 @@
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script>
+  document.addEventListener('click', function (event) {
+    setTimeout(function(){
+      jQuery("#WAC__header-name").text("FAQ");
+    }, 100);
+  }, false);
+</script>
 </body>
 </html>
