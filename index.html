@@ -178,8 +178,21 @@
       document.addEventListener('click', function (event) {
         setTimeout(function(){
           jQuery("#WAC__header-name").text("Ask Me");
-        }, 100);
+        }, 250);
       }, false);
+      document.addEventListener('DOMContentLoaded', (e) => {
+        e.preventDefault()
+        setTimeout(function() {
+          jQuery("#WACContainer.WACContainer button.WACLauncher__Button.WAC__button--base").css({
+            "height": "130px",
+            "width": "130px"
+          });
+          jQuery("#WACContainer.WACContainer button.WACLauncher__Button svg").css({
+            "height": "60px",
+            "width": "60px"
+          });
+        }, 350);
+      });
     </script>
   </body>
   </html>
