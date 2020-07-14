@@ -420,3 +420,7 @@ table a, #comments a{background-color:inherit;}
     height:40px;
     overflow:hidden;
 }
+
+.justify {text-align: justify;
+  text-justify: inter-word;
+}
